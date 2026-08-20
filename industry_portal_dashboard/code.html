@@ -188,47 +188,54 @@
       </style>
 </head>
 <body class="bg-background text-on-background font-body-md text-body-md flex min-h-screen">
-<!-- SideNavBar (Shared Component) -->
-<aside class="h-screen w-64 fixed left-0 top-0 border-r border-outline-variant bg-surface-container-low flex flex-col p-4 gap-y-2 z-40 hidden md:flex">
-<a href="../bioflow_ai_homepage/code.html" class="mb-md flex flex-col items-center hover:opacity-90 transition-opacity">
-<div class="w-16 h-16 rounded-full bg-surface-container-highest flex items-center justify-center mb-sm overflow-hidden border border-outline-variant">
-<img alt="Industry Partner Logo" class="w-full h-full object-cover" data-alt="A clean, minimalist abstract logo design suitable for a modern industrial company, featuring subtle geometric shapes in cool teal and gray tones, placed on a crisp white background. High resolution, corporate aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYigXoyWKulWIW9-ha5XIIJQKEKwOQoP9ECDxqruTCd0aSIJb7MdgCPTCuvILyUqnExRw3ClcHUx0OubgOC22rJR2gjkDuFMh7jfR3kkgZ8g1fmdYiCIbGsumpTGp2Ms_LqF82Sm62p-1o53rbNxbeY0Jji4sEB32NBQOLktBG04YjAXuFkIvHaGR5zQwPdu3HArJlkk9SSZDITotzzv7wEQXvFL1hzQE9AcbLnYv34JzFNtFJ4OWw">
+<!-- SideNavBar (Unified Shared Component) -->
+<aside class="h-screen w-64 fixed left-0 top-0 border-r border-outline-variant bg-surface-container-low flex flex-col p-4 z-40 hidden md:flex font-body-sm text-body-sm">
+<!-- Header -->
+<a href="../bioflow_ai_homepage/code.html" class="mb-4 pb-4 border-b border-outline-variant flex flex-col gap-1 hover:opacity-90 transition-opacity">
+<div class="w-12 h-12 rounded-lg bg-surface-container-highest flex items-center justify-center overflow-hidden mb-1">
+<img class="w-full h-full object-cover" alt="REMYVIA Logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDw9EkkmAShtvwzr3w456CT-0Ght7sAG0SCGcwdhMJ5yURb9IpcqnyayW6S6e3S7rtsP3JsLG6i6tEN0F9jqqEG8-s9XqcZFfQ228D7zoJ_N4UwwveFs-wL54rV9jxzy_tt41MU5Lv7x9zlP1IwgOSu3Ut8ObeQfBz7UrVs5_3W6rR7KHxLa5k_KbljuFkLFl7BZS1j21_qFU3hAYCQ4QvX-uQ88uJ6nBiuD5uWdC2BYswvLSRBQ0x">
 </div>
-<h2 class="font-headline-md text-headline-md text-primary text-center">REMYVIA Ecotech</h2>
-<p class="font-label-caps text-label-caps text-on-surface-variant mt-1 text-center">Treatment ID: WT-001</p>
+<div class="font-headline-md text-headline-md font-bold text-primary truncate leading-tight">REMYVIA industrial ecotech</div>
+<div class="font-label-caps text-label-caps text-on-surface-variant mt-1">Treatment ID: #8821</div>
+<div class="text-secondary text-xs">Current Stage: Bio-Augmentation</div>
 </a>
-<nav class="flex-1 flex flex-col gap-y-2">
-<a class="flex items-center gap-sm p-sm text-on-surface-variant hover:bg-surface-container-high rounded-lg hover:bg-surface-container-highest transition-all" href="../bioflow_ai_homepage/code.html">
-<span class="material-symbols-outlined" data-icon="home">home</span>
-<span class="">Home Landing</span>
+<!-- Navigation Links -->
+<nav class="flex-1 flex flex-col gap-1 overflow-y-auto">
+<a class="flex items-center gap-3 px-3 py-2 text-on-surface-variant hover:bg-surface-container-high rounded-lg transition-all cursor-pointer" href="../bioflow_ai_homepage/code.html">
+<span class="material-symbols-outlined text-lg">home</span>
+<span>Home Landing</span>
 </a>
-<a class="flex items-center gap-sm p-sm bg-primary-container text-on-primary-container font-semibold rounded-lg" href="code.html">
-<span class="material-symbols-outlined" data-icon="dashboard">dashboard</span>
-<span class="">Overview</span>
+<a class="flex items-center gap-3 px-3 py-2 bg-primary-container text-on-primary-container font-semibold rounded-lg transition-all cursor-pointer" href="code.html">
+<span class="material-symbols-outlined text-lg">dashboard</span>
+<span>Overview</span>
 </a>
-<a class="flex items-center gap-sm p-sm text-on-surface-variant hover:bg-surface-container-high rounded-lg hover:bg-surface-container-highest transition-all" href="../ai_treatment_performance_report/code.html">
-<span class="material-symbols-outlined" data-icon="biotech">biotech</span>
-<span class="">Treatment Logs</span>
+<a class="flex items-center gap-3 px-3 py-2 text-on-surface-variant hover:bg-surface-container-high rounded-lg transition-all cursor-pointer" href="../ai_treatment_performance_report/code.html">
+<span class="material-symbols-outlined text-lg">biotech</span>
+<span>Treatment Logs</span>
 </a>
-<a class="flex items-center gap-sm p-sm text-on-surface-variant hover:bg-surface-container-high rounded-lg hover:bg-surface-container-highest transition-all" href="../real_time_monitoring_dashboard/code.html">
-<span class="material-symbols-outlined" data-icon="monitoring">monitoring</span>
-<span class="">Analytics</span>
+<a class="flex items-center gap-3 px-3 py-2 text-on-surface-variant hover:bg-surface-container-high rounded-lg transition-all cursor-pointer" href="../real_time_monitoring_dashboard/code.html">
+<span class="material-symbols-outlined text-lg">monitoring</span>
+<span>Analytics</span>
 </a>
-<a class="flex items-center gap-sm p-sm text-on-surface-variant hover:bg-surface-container-high rounded-lg hover:bg-surface-container-highest transition-all" href="../microorganism_database/code.html">
-<span class="material-symbols-outlined" data-icon="database">database</span>
-<span class="">Microbe DB</span>
+<a class="flex items-center gap-3 px-3 py-2 text-on-surface-variant hover:bg-surface-container-high rounded-lg transition-all cursor-pointer" href="../microorganism_database/code.html">
+<span class="material-symbols-outlined text-lg">database</span>
+<span>Microbe DB</span>
 </a>
-<a class="flex items-center gap-sm p-sm text-on-surface-variant hover:bg-surface-container-high rounded-lg hover:bg-surface-container-highest transition-all" href="../request_treatment_form/code.html">
-<span class="material-symbols-outlined" data-icon="add_circle">add_circle</span>
-<span class="">Request Treatment</span>
+<a class="flex items-center gap-3 px-3 py-2 text-on-surface-variant hover:bg-surface-container-high rounded-lg transition-all cursor-pointer" href="../request_treatment_form/code.html">
+<span class="material-symbols-outlined text-lg">add_circle</span>
+<span>Request Treatment</span>
 </a>
 </nav>
-<div class="mt-auto flex flex-col gap-y-2">
-<button class="w-full py-2 px-4 bg-error text-on-error rounded font-semibold text-body-sm hover:bg-error-container hover:text-on-error-container transition-colors mb-sm">Emergency Support</button>
-<a class="flex items-center gap-sm p-sm text-on-surface-variant hover:bg-surface-container-high rounded-lg hover:bg-surface-container-highest transition-all" href="../bioflow_ai_homepage/code.html">
-<span class="material-symbols-outlined" data-icon="arrow_back">arrow_back</span>
-<span class="">Back to Home</span>
+<!-- Footer Actions -->
+<div class="mt-auto pt-3 border-t border-outline-variant flex flex-col gap-2">
+<a class="flex items-center gap-3 px-3 py-2 text-on-surface-variant hover:bg-surface-container-high rounded-lg transition-all cursor-pointer" href="../bioflow_ai_homepage/code.html">
+<span class="material-symbols-outlined text-lg">arrow_back</span>
+<span>Back to Home</span>
 </a>
+<button class="w-full bg-error-container text-on-error-container font-body-sm text-body-sm py-2 px-3 rounded-lg hover:opacity-90 transition-opacity flex items-center justify-center gap-2 font-semibold">
+<span class="material-symbols-outlined text-lg">emergency</span>
+<span>Emergency Support</span>
+</button>
 </div>
 </aside>
 <!-- Main Content Canvas -->
