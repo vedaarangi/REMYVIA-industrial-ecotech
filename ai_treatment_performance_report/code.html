@@ -1,0 +1,327 @@
+<!DOCTYPE html><html class="light" lang="en" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>REMYVIA industrial ecotech - Treatment Performance Report</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-container": "#008378",
+                        "error": "#ba1a1a",
+                        "secondary": "#545f73",
+                        "surface-container-high": "#e6e8ea",
+                        "surface-bright": "#f7f9fb",
+                        "on-background": "#191c1e",
+                        "surface-container-lowest": "#ffffff",
+                        "secondary-fixed-dim": "#bcc7de",
+                        "tertiary-container": "#008376",
+                        "outline-variant": "#bcc9c6",
+                        "background": "#f7f9fb",
+                        "outline": "#6d7a77",
+                        "surface-container-highest": "#e0e3e5",
+                        "tertiary-fixed-dim": "#4fdbc8",
+                        "surface": "#f7f9fb",
+                        "secondary-container": "#d5e0f8",
+                        "on-secondary-container": "#586377",
+                        "inverse-on-surface": "#eff1f3",
+                        "primary-fixed-dim": "#6bd8cb",
+                        "secondary-fixed": "#d8e3fb",
+                        "on-error": "#ffffff",
+                        "tertiary-fixed": "#71f8e4",
+                        "on-tertiary-fixed": "#00201c",
+                        "on-primary-container": "#f4fffc",
+                        "inverse-surface": "#2d3133",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-fixed": "#111c2d",
+                        "on-primary": "#ffffff",
+                        "tertiary": "#00685d",
+                        "primary": "#00685f",
+                        "surface-container-low": "#f2f4f6",
+                        "surface-variant": "#e0e3e5",
+                        "on-primary-fixed-variant": "#005049",
+                        "on-tertiary-fixed-variant": "#005048",
+                        "on-tertiary-container": "#f4fffb",
+                        "on-primary-fixed": "#00201d",
+                        "on-surface": "#191c1e",
+                        "primary-fixed": "#89f5e7",
+                        "surface-tint": "#006a61",
+                        "error-container": "#ffdad6",
+                        "on-surface-variant": "#3d4947",
+                        "on-secondary-fixed-variant": "#3c475a",
+                        "on-secondary": "#ffffff",
+                        "surface-dim": "#d8dadc",
+                        "inverse-primary": "#6bd8cb",
+                        "surface-container": "#eceef0",
+                        "on-error-container": "#93000a"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "xl": "4rem",
+                        "margin-desktop": "64px",
+                        "gutter": "24px",
+                        "xs": "0.5rem",
+                        "margin-mobile": "16px",
+                        "md": "1.5rem",
+                        "lg": "2.5rem",
+                        "base": "4px",
+                        "sm": "1rem"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Inter", "sans-serif"],
+                        "headline-md": ["Hanken Grotesk", "sans-serif"],
+                        "display-lg": ["Hanken Grotesk", "sans-serif"],
+                        "headline-lg": ["Hanken Grotesk", "sans-serif"],
+                        "body-lg": ["Inter", "sans-serif"],
+                        "body-sm": ["Inter", "sans-serif"],
+                        "label-caps": ["JetBrains Mono", "monospace"],
+                        "headline-lg-mobile": ["Hanken Grotesk", "sans-serif"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+                        "label-caps": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "500" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md text-body-md antialiased flex flex-col md:flex-row min-h-screen">
+<!-- JSON Component: SideNavBar -->
+<nav class="hidden md:flex flex-col bg-surface-container-low border-r border-outline-variant font-body-sm text-body-sm h-screen w-64 fixed left-0 top-0 p-4 gap-y-2 z-40">
+<!-- Header -->
+<a href="../bioflow_ai_homepage/code.html" class="mb-lg pb-4 border-b border-outline-variant flex flex-col gap-xs hover:opacity-90 transition-opacity">
+<div class="w-12 h-12 rounded-lg bg-surface-container-highest flex items-center justify-center overflow-hidden mb-2">
+<img class="w-full h-full object-cover" data-alt="A clean, abstract geometric logo featuring stylized blue and teal overlapping shapes representing water filtration and biotechnology, set against a pristine white background. High contrast, modern corporate aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDw9EkkmAShtvwzr3w456CT-0Ght7sAG0SCGcwdhMJ5yURb9IpcqnyayW6S6e3S7rtsP3JsLG6i6tEN0F9jqqEG8-s9XqcZFfQ228D7zoJ_N4UwwveFs-wL54rV9jxzy_tt41MU5Lv7x9zlP1IwgOSu3Ut8ObeQfBz7UrVs5_3W6rR7KHxLa5k_KbljuFkLFl7BZS1j21_qFU3hAYCQ4QvX-uQ88uJ6nBiuD5uWdC2BYswvLSRBQ0x">
+</div>
+<div class="font-headline-md text-headline-md text-primary truncate">REMYVIA industrial ecotech</div>
+<div class="font-label-caps text-label-caps text-on-surface-variant mt-2">Treatment ID: #8821</div>
+<div class="text-secondary">Current Stage: Bio-Augmentation</div>
+</a>
+<!-- Navigation Links -->
+<div class="flex-1 flex flex-col gap-1">
+<a class="flex items-center gap-3 px-3 py-2 text-on-surface-variant hover:bg-surface-container-high rounded-lg hover:bg-surface-container-highest transition-all cursor-pointer active:opacity-80" href="../bioflow_ai_homepage/code.html">
+<span class="material-symbols-outlined">home</span>
+<span class="">Home Landing</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 text-on-surface-variant hover:bg-surface-container-high rounded-lg hover:bg-surface-container-highest transition-all cursor-pointer active:opacity-80" href="../industry_portal_dashboard/code.html">
+<span class="material-symbols-outlined">dashboard</span>
+<span class="">Overview</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 bg-primary-container text-on-primary-container font-semibold rounded-lg cursor-pointer active:opacity-80 transition-transform active:scale-95" href="code.html">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">biotech</span>
+<span class="">Treatment Logs</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 text-on-surface-variant hover:bg-surface-container-high rounded-lg hover:bg-surface-container-highest transition-all cursor-pointer active:opacity-80" href="../real_time_monitoring_dashboard/code.html">
+<span class="material-symbols-outlined">monitoring</span>
+<span class="">Analytics</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 text-on-surface-variant hover:bg-surface-container-high rounded-lg hover:bg-surface-container-highest transition-all cursor-pointer active:opacity-80" href="../microorganism_database/code.html">
+<span class="material-symbols-outlined">database</span>
+<span class="">Microbe DB</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 text-on-surface-variant hover:bg-surface-container-high rounded-lg hover:bg-surface-container-highest transition-all cursor-pointer active:opacity-80" href="../request_treatment_form/code.html">
+<span class="material-symbols-outlined">add_circle</span>
+<span class="">Request Treatment</span>
+</a>
+</div>
+<!-- Footer Actions -->
+<div class="mt-auto pt-4 border-t border-outline-variant flex flex-col gap-2">
+<a class="flex items-center gap-3 px-3 py-2 text-on-surface-variant hover:bg-surface-container-high rounded-lg transition-all cursor-pointer" href="../bioflow_ai_homepage/code.html">
+<span class="material-symbols-outlined">arrow_back</span>
+<span class="">Back to Home</span>
+</a>
+<button class="mt-2 w-full bg-error-container text-on-error-container font-body-sm text-body-sm py-2 rounded-lg hover:opacity-90 transition-opacity flex items-center justify-center gap-2">
+<span class="material-symbols-outlined">emergency</span>
+<span class="">Emergency Support</span>
+</button>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="flex-1 w-full md:ml-64 p-margin-mobile md:p-margin-desktop overflow-y-auto">
+<!-- Top Action Bar -->
+<header class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-xl">
+<div class="flex flex-col gap-2">
+<div class="flex items-center gap-4 flex-wrap">
+<a class="flex items-center gap-1 text-primary font-semibold font-label-caps hover:underline transition-colors w-max" href="../bioflow_ai_homepage/code.html">
+<span class="material-symbols-outlined text-[16px]">arrow_back</span>
+                    BACK TO HOME LANDING
+</a>
+<span class="text-outline">|</span>
+<a class="flex items-center gap-1 text-secondary font-label-caps hover:text-primary transition-colors w-max" href="../industry_portal_dashboard/code.html">
+<span class="material-symbols-outlined text-[16px]">dashboard</span>
+                    PORTAL OVERVIEW
+</a>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-on-surface">
+                    AI-Assisted Performance Report
+                </h1>
+<p class="font-label-caps text-label-caps text-secondary uppercase tracking-wider">
+                    Generated: Oct 24, 2024 • Ref: REP-8821-A
+                </p>
+</div>
+<div class="flex gap-2">
+<button class="px-4 py-2 border border-outline text-on-surface font-body-sm text-body-sm rounded-lg hover:bg-surface-container-low transition-colors flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">print</span>
+                    Print
+                </button>
+<button class="px-4 py-2 bg-primary text-on-primary font-body-sm text-body-sm rounded-lg hover:bg-tertiary-container transition-colors flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">download</span>
+                    Export PDF
+                </button>
+</div>
+</header>
+<!-- Bento Grid Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<!-- Main Column (Left) -->
+<div class="lg:col-span-8 flex flex-col gap-gutter">
+<!-- Status Banner -->
+<div class="bg-surface-container-lowest border border-outline-variant shadow-sm rounded-xl p-md flex flex-col sm:flex-row gap-4 items-start relative overflow-hidden">
+<div class="absolute top-0 left-0 w-1 h-full bg-secondary"></div>
+<div class="p-3 bg-secondary-container rounded-full text-on-secondary-container shrink-0">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">science</span>
+</div>
+<div class="flex flex-col gap-1">
+<h2 class="font-headline-md text-headline-md text-on-surface">Final Status: Laboratory Verification Required</h2>
+<p class="font-body-sm text-body-sm text-secondary">
+                            Disclaimer: The available pre- and post-treatment data indicate a reduction in selected measured pollution indicators based on continuous AI sensor monitoring. Further laboratory verification is required for regulatory compliance certification.
+                        </p>
+</div>
+</div>
+<!-- Data Table Card -->
+<div class="bg-surface-container-lowest border border-outline-variant shadow-sm rounded-xl overflow-hidden flex flex-col h-full">
+<div class="p-4 border-b border-surface-container flex justify-between items-center bg-surface-bright">
+<h3 class="font-headline-md text-headline-md text-on-surface text-[18px]">Measurements &amp; Change Analysis</h3>
+<span class="font-label-caps text-label-caps text-primary bg-primary-container/20 px-2 py-1 rounded">Live Sensor Data</span>
+</div>
+<div class="p-0 overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr>
+<th class="p-4 font-label-caps text-label-caps text-secondary border-b border-surface-container-highest whitespace-nowrap">Pollution Indicator</th>
+<th class="p-4 font-label-caps text-label-caps text-secondary border-b border-surface-container-highest text-right whitespace-nowrap">Initial (mg/L)</th>
+<th class="p-4 font-label-caps text-label-caps text-secondary border-b border-surface-container-highest text-right whitespace-nowrap">Final (mg/L)</th>
+<th class="p-4 font-label-caps text-label-caps text-secondary border-b border-surface-container-highest text-right whitespace-nowrap">Reduction</th>
+</tr>
+</thead>
+<tbody class="font-label-caps text-label-caps">
+<tr class="hover:bg-surface-container-low transition-colors border-b border-surface-container">
+<td class="p-4 text-on-surface font-body-sm text-body-sm font-medium">BOD₅ (Biochemical Oxygen Demand)</td>
+<td class="p-4 text-secondary text-right">350.0</td>
+<td class="p-4 text-on-surface text-right">22.5</td>
+<td class="p-4 text-right text-primary font-semibold flex items-center justify-end gap-1">
+<span class="material-symbols-outlined text-[14px]">arrow_downward</span> 93.5%
+                                    </td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors border-b border-surface-container">
+<td class="p-4 text-on-surface font-body-sm text-body-sm font-medium">COD (Chemical Oxygen Demand)</td>
+<td class="p-4 text-secondary text-right">720.0</td>
+<td class="p-4 text-on-surface text-right">58.2</td>
+<td class="p-4 text-right text-primary font-semibold flex items-center justify-end gap-1">
+<span class="material-symbols-outlined text-[14px]">arrow_downward</span> 91.9%
+                                    </td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors border-b border-surface-container">
+<td class="p-4 text-on-surface font-body-sm text-body-sm font-medium">TSS (Total Suspended Solids)</td>
+<td class="p-4 text-secondary text-right">280.0</td>
+<td class="p-4 text-on-surface text-right">15.1</td>
+<td class="p-4 text-right text-primary font-semibold flex items-center justify-end gap-1">
+<span class="material-symbols-outlined text-[14px]">arrow_downward</span> 94.6%
+                                    </td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="p-4 text-on-surface font-body-sm text-body-sm font-medium">NH₃-N (Ammonia Nitrogen)</td>
+<td class="p-4 text-secondary text-right">45.0</td>
+<td class="p-4 text-on-surface text-right">3.8</td>
+<td class="p-4 text-right text-primary font-semibold flex items-center justify-end gap-1">
+<span class="material-symbols-outlined text-[14px]">arrow_downward</span> 91.5%
+                                    </td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<!-- Side Column (Right) -->
+<div class="lg:col-span-4 flex flex-col gap-gutter">
+<!-- AI Interpretation Card -->
+<div class="bg-surface-container-lowest border border-outline-variant shadow-sm rounded-xl overflow-hidden flex flex-col h-full relative">
+<!-- Subtle AI gradient accent at top -->
+<div class="h-1 w-full bg-gradient-to-r from-primary via-tertiary-fixed to-primary-fixed"></div>
+<div class="p-md flex flex-col gap-4">
+<div class="flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined">auto_awesome</span>
+<h3 class="font-headline-md text-headline-md text-[18px]">AI Interpretation</h3>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant flex flex-col gap-3">
+<p class="">
+                                The continuous monitoring array detected rapid oxidation of organic matter beginning at <span class="font-label-caps text-label-caps bg-surface-variant px-1 rounded">T+4h</span> post bio-augmentation.
+                            </p>
+<p class="">
+                                The sharp reduction in <strong class="text-on-surface">BOD₅ (93.5%)</strong> and <strong class="text-on-surface">TSS (94.6%)</strong> indicates optimal microbial metabolic activity, likely accelerated by the dynamically adjusted aeration cycles recommended by the neural model.
+                            </p>
+<div class="mt-2 p-3 bg-primary-container/10 border border-primary-container/20 rounded-lg flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[18px] mt-0.5">info</span>
+<span class="text-primary text-[13px] leading-tight">Algorithm confidence in current bio-reactor stability is 98.2%. Ready for secondary settling phase.</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Reuse Applications Card -->
+<div class="bg-surface-container-lowest border border-outline-variant shadow-sm rounded-xl p-md flex flex-col gap-4">
+<h3 class="font-headline-md text-headline-md text-[18px] text-on-surface">Potential Non-Potable Reuse</h3>
+<p class="font-body-sm text-body-sm text-secondary mb-2">Based on current reduction metrics, the effluent qualifies for the following applications (pending lab verification):</p>
+<div class="flex flex-col gap-3">
+<div class="flex items-center gap-3 p-3 border border-outline-variant rounded-lg hover:bg-surface-bright transition-colors">
+<div class="w-10 h-10 rounded-full bg-surface-variant flex items-center justify-center text-on-surface shrink-0">
+<span class="material-symbols-outlined">factory</span>
+</div>
+<div>
+<div class="font-body-sm text-body-sm font-semibold text-on-surface">Industrial Cleaning</div>
+<div class="font-label-caps text-label-caps text-secondary">Class B Compliance</div>
+</div>
+</div>
+<div class="flex items-center gap-3 p-3 border border-outline-variant rounded-lg hover:bg-surface-bright transition-colors">
+<div class="w-10 h-10 rounded-full bg-surface-variant flex items-center justify-center text-on-surface shrink-0">
+<span class="material-symbols-outlined">park</span>
+</div>
+<div>
+<div class="font-body-sm text-body-sm font-semibold text-on-surface">Landscaping &amp; Irrigation</div>
+<div class="font-label-caps text-label-caps text-secondary">Surface application only</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+
+
+</body></html>
