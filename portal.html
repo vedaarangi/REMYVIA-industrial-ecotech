@@ -1,0 +1,258 @@
+<!DOCTYPE html><html class="light" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Industry Partner Portal - REMYVIA industrial ecotech</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@600;700&amp;family=Inter:wght@400;600&amp;family=JetBrains+Mono:wght@500&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-container": "#008378",
+                        "error": "#ba1a1a",
+                        "secondary": "#545f73",
+                        "surface-container-high": "#e6e8ea",
+                        "surface-bright": "#f7f9fb",
+                        "on-background": "#191c1e",
+                        "surface-container-lowest": "#ffffff",
+                        "secondary-fixed-dim": "#bcc7de",
+                        "tertiary-container": "#008376",
+                        "outline-variant": "#bcc9c6",
+                        "background": "#f7f9fb",
+                        "outline": "#6d7a77",
+                        "surface-container-highest": "#e0e3e5",
+                        "tertiary-fixed-dim": "#4fdbc8",
+                        "surface": "#f7f9fb",
+                        "secondary-container": "#d5e0f8",
+                        "on-secondary-container": "#586377",
+                        "inverse-on-surface": "#eff1f3",
+                        "primary-fixed-dim": "#6bd8cb",
+                        "secondary-fixed": "#d8e3fb",
+                        "on-error": "#ffffff",
+                        "tertiary-fixed": "#71f8e4",
+                        "on-tertiary-fixed": "#00201c",
+                        "on-primary-container": "#f4fffc",
+                        "inverse-surface": "#2d3133",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-fixed": "#111c2d",
+                        "on-primary": "#ffffff",
+                        "tertiary": "#00685d",
+                        "primary": "#00685f",
+                        "surface-container-low": "#f2f4f6",
+                        "surface-variant": "#e0e3e5",
+                        "on-primary-fixed-variant": "#005049",
+                        "on-tertiary-fixed-variant": "#005048",
+                        "on-tertiary-container": "#f4fffb",
+                        "on-primary-fixed": "#00201d",
+                        "on-surface": "#191c1e",
+                        "primary-fixed": "#89f5e7",
+                        "surface-tint": "#006a61",
+                        "error-container": "#ffdad6",
+                        "on-surface-variant": "#3d4947",
+                        "on-secondary-fixed-variant": "#3c475a",
+                        "on-secondary": "#ffffff",
+                        "surface-dim": "#d8dadc",
+                        "inverse-primary": "#6bd8cb",
+                        "surface-container": "#eceef0",
+                        "on-error-container": "#93000a"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "xl": "4rem",
+                        "margin-desktop": "64px",
+                        "gutter": "24px",
+                        "xs": "0.5rem",
+                        "margin-mobile": "16px",
+                        "md": "1.5rem",
+                        "lg": "2.5rem",
+                        "base": "4px",
+                        "sm": "1rem"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Inter"],
+                        "headline-md": ["Hanken Grotesk"],
+                        "display-lg": ["Hanken Grotesk"],
+                        "headline-lg": ["Hanken Grotesk"],
+                        "body-lg": ["Inter"],
+                        "body-sm": ["Inter"],
+                        "label-caps": ["JetBrains Mono"],
+                        "headline-lg-mobile": ["Hanken Grotesk"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+                        "label-caps": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "500" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-family: 'Material Symbols Outlined';
+            font-weight: normal;
+            font-style: normal;
+            font-size: 20px;
+            line-height: 1;
+            letter-spacing: normal;
+            text-transform: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            white-space: nowrap;
+            word-wrap: normal;
+            direction: ltr;
+            font-feature-settings: 'liga';
+            -webkit-font-feature-settings: 'liga';
+            -webkit-font-smoothing: antialiased;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md text-body-md flex min-h-screen">
+<!-- SideNavBar (Unified Shared Component) -->
+<aside class="h-screen w-64 fixed left-0 top-0 border-r border-outline-variant bg-surface-container-low flex flex-col p-4 z-40 hidden md:flex font-body-sm text-body-sm">
+<!-- Header -->
+<a href="index.html" class="mb-4 pb-4 border-b border-outline-variant flex flex-col gap-1 hover:opacity-90 transition-opacity">
+<div class="w-10 h-10 rounded-lg bg-primary text-on-primary flex items-center justify-center font-bold text-lg shadow-sm mb-1">
+<span class="material-symbols-outlined text-2xl">biotech</span>
+</div>
+<div class="font-headline-md text-headline-md font-bold text-primary truncate leading-tight">REMYVIA industrial ecotech</div>
+<div class="font-label-caps text-label-caps text-on-surface-variant mt-1">Treatment ID: #8821</div>
+<div class="text-secondary text-xs">Current Stage: Bio-Augmentation</div>
+</a>
+<!-- Navigation Links -->
+<nav class="flex-1 flex flex-col gap-1 overflow-y-auto">
+<a class="flex items-center gap-3 px-3 py-2 text-on-surface-variant hover:bg-surface-container-high rounded-lg transition-all cursor-pointer" href="index.html">
+<span class="material-symbols-outlined text-lg">home</span>
+<span>Home Landing</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 bg-primary-container text-on-primary-container font-semibold rounded-lg transition-all cursor-pointer" href="portal.html">
+<span class="material-symbols-outlined text-lg">dashboard</span>
+<span>Overview</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 text-on-surface-variant hover:bg-surface-container-high rounded-lg transition-all cursor-pointer" href="performance.html">
+<span class="material-symbols-outlined text-lg">biotech</span>
+<span>Treatment Logs</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 text-on-surface-variant hover:bg-surface-container-high rounded-lg transition-all cursor-pointer" href="monitoring.html">
+<span class="material-symbols-outlined text-lg">monitoring</span>
+<span>Analytics</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 text-on-surface-variant hover:bg-surface-container-high rounded-lg transition-all cursor-pointer" href="microbes.html">
+<span class="material-symbols-outlined text-lg">database</span>
+<span>Microbe DB</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 text-on-surface-variant hover:bg-surface-container-high rounded-lg transition-all cursor-pointer" href="request.html">
+<span class="material-symbols-outlined text-lg">add_circle</span>
+<span>Request Treatment</span>
+</a>
+</nav>
+<!-- Footer Actions -->
+<div class="mt-auto pt-3 border-t border-outline-variant flex flex-col gap-2">
+<a class="flex items-center gap-3 px-3 py-2 text-on-surface-variant hover:bg-surface-container-high rounded-lg transition-all cursor-pointer" href="index.html">
+<span class="material-symbols-outlined text-lg">arrow_back</span>
+<span>Back to Home</span>
+</a>
+<button class="w-full bg-error-container text-on-error-container font-body-sm text-body-sm py-2 px-3 rounded-lg hover:opacity-90 transition-opacity flex items-center justify-center gap-2 font-semibold">
+<span class="material-symbols-outlined text-lg">emergency</span>
+<span>Emergency Support</span>
+</button>
+</div>
+</aside>
+<!-- Main Content Canvas -->
+<main class="flex-1 ml-0 md:ml-64 flex flex-col min-h-screen">
+<!-- TopAppBar Mobile Fallback -->
+<header class="flex md:hidden flex-col border-b border-outline-variant bg-white/80 backdrop-blur-md sticky top-0 z-30 px-margin-mobile py-3">
+<div class="flex items-center justify-between">
+<a href="index.html" class="font-headline-md text-headline-md font-bold text-primary text-base">REMYVIA Ecotech</a>
+<div class="flex items-center gap-2">
+<a href="index.html" class="p-1.5 text-primary rounded hover:bg-surface-container-low" title="Home">
+<span class="material-symbols-outlined text-xl">home</span>
+</a>
+<button onclick="document.getElementById('mobilePortalMenu').classList.toggle('hidden')" class="p-1.5 text-primary rounded hover:bg-surface-container-low">
+<span class="material-symbols-outlined text-xl">menu</span>
+</button>
+</div>
+</div>
+<!-- Mobile Navigation Drawer -->
+<div id="mobilePortalMenu" class="hidden pt-3 pb-1 border-t border-outline-variant mt-2 flex flex-col gap-1 text-sm">
+<a class="flex items-center gap-2 px-3 py-2 text-primary font-semibold rounded-lg bg-primary-container/20" href="portal.html"><span class="material-symbols-outlined text-lg">dashboard</span> Overview</a>
+<a class="flex items-center gap-2 px-3 py-2 text-on-surface-variant rounded-lg hover:bg-surface-container-high" href="performance.html"><span class="material-symbols-outlined text-lg">biotech</span> Treatment Logs</a>
+<a class="flex items-center gap-2 px-3 py-2 text-on-surface-variant rounded-lg hover:bg-surface-container-high" href="monitoring.html"><span class="material-symbols-outlined text-lg">monitoring</span> Analytics</a>
+<a class="flex items-center gap-2 px-3 py-2 text-on-surface-variant rounded-lg hover:bg-surface-container-high" href="microbes.html"><span class="material-symbols-outlined text-lg">database</span> Microbe DB</a>
+<a class="flex items-center gap-2 px-3 py-2 text-on-surface-variant rounded-lg hover:bg-surface-container-high" href="request.html"><span class="material-symbols-outlined text-lg">add_circle</span> Request Treatment</a>
+<a class="flex items-center gap-2 px-3 py-2 text-on-surface-variant rounded-lg hover:bg-surface-container-high" href="index.html"><span class="material-symbols-outlined text-lg">arrow_back</span> Back to Home</a>
+</div>
+</header>
+<div class="p-margin-mobile md:p-margin-desktop flex-1">
+<div class="mb-4 flex items-center justify-between">
+<a href="index.html" class="inline-flex items-center gap-1 text-primary hover:underline font-semibold font-body-sm">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span> Back to Home Landing Page
+</a>
+<a href="request.html" class="bg-primary text-on-primary font-body-sm font-semibold px-3 py-1.5 rounded-lg hover:bg-primary-container transition-colors shadow-sm inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[18px]">add</span> Request New Treatment
+</a>
+</div>
+<header class="mb-xl">
+<h1 class="font-display-lg text-display-lg text-on-background mb-xs">Treatment Overview</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">ABC Textile Industries - ID: WT-001</p>
+</header>
+<!-- Progress Timeline -->
+<section class="mb-xl bg-surface-container-lowest border border-outline-variant rounded shadow-sm p-md">
+<h3 class="font-label-caps text-label-caps text-on-surface-variant mb-md tracking-wider">Treatment Progress</h3>
+<div class="flex flex-col md:flex-row justify-between relative">
+<div class="flex-1 flex flex-col items-center mb-md md:mb-0 relative z-10">
+<div class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold font-body-sm mb-xs">1</div>
+<span class="font-body-sm text-body-sm font-semibold text-on-background">Submit</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant">Completed</span>
+</div>
+<div class="flex-1 flex flex-col items-center mb-md md:mb-0 relative z-10">
+<div class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold font-body-sm mb-xs">2</div>
+<span class="font-body-sm text-body-sm font-semibold text-on-background">Analyze</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant">Completed</span>
+</div>
+<div class="flex-1 flex flex-col items-center mb-md md:mb-0 relative z-10">
+<div class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold font-body-sm mb-xs">3</div>
+<span class="font-body-sm text-body-sm font-semibold text-on-background">Formulate</span>
+<span class="font-label-caps text-label-caps text-primary">In Progress</span>
+</div>
+<div class="flex-1 flex flex-col items-center mb-md md:mb-0 relative z-10 opacity-50">
+<div class="w-8 h-8 rounded-full bg-surface-container-highest text-on-surface-variant flex items-center justify-center font-bold font-body-sm mb-xs">4</div>
+<span class="font-body-sm text-body-sm font-semibold text-on-background">Deploy</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant">Pending</span>
+</div>
+<div class="flex-1 flex flex-col items-center mb-md md:mb-0 relative z-10 opacity-50">
+<div class="w-8 h-8 rounded-full bg-surface-container-highest text-on-surface-variant flex items-center justify-center font-bold font-body-sm mb-xs">5</div>
+<span class="font-body-sm text-body-sm font-semibold text-on-background">Monitor</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant">Pending</span>
+</div>
+<div class="flex-1 flex flex-col items-center relative z-10 opacity-50">
+<div class="w-8 h-8 rounded-full bg-surface-container-highest text-on-surface-variant flex items-center justify-center font-bold font-body-sm mb-xs">6</div>
+<span class="font-body-sm text-body-sm font-semibold text-on-background">Compare</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant">Pending</span>
+</div>
+</div>
+</section>
+</div>
+<!-- Footer -->
+<footer class="bg-surface-bright border-t border-outline-variant p-margin-mobile md:p-margin-desktop text-secondary font-body-sm text-body-sm mt-auto">
+<div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+<div class="font-label-caps text-label-caps text-primary mb-sm">REMYVIA industrial ecotech</div>
+<p class="font-body-sm text-body-sm text-secondary">© 2026 REMYVIA industrial ecotech. Biotechnology | AI Analytics | Smart Monitoring</p>
+</div>
+</footer>
+</main>
+</body></html>
