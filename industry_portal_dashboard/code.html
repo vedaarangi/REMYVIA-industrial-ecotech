@@ -234,11 +234,27 @@
 <!-- Main Content Canvas -->
 <main class="flex-1 ml-0 md:ml-64 flex flex-col min-h-screen">
 <!-- TopAppBar Mobile Fallback -->
-<header class="flex md:hidden items-center justify-between px-margin-mobile py-4 border-b border-outline-variant bg-white/80 backdrop-blur-md sticky top-0 z-30">
-<a href="../bioflow_ai_homepage/code.html" class="font-headline-md text-headline-md font-bold text-primary">REMYVIA industrial ecotech</a>
-<a href="../bioflow_ai_homepage/code.html" class="p-2 text-primary">
-<span class="material-symbols-outlined">home</span>
+<header class="flex md:hidden flex-col border-b border-outline-variant bg-white/80 backdrop-blur-md sticky top-0 z-30 px-margin-mobile py-3">
+<div class="flex items-center justify-between">
+<a href="../bioflow_ai_homepage/code.html" class="font-headline-md text-headline-md font-bold text-primary text-base">REMYVIA Ecotech</a>
+<div class="flex items-center gap-2">
+<a href="../bioflow_ai_homepage/code.html" class="p-1.5 text-primary rounded hover:bg-surface-container-low" title="Home">
+<span class="material-symbols-outlined text-xl">home</span>
 </a>
+<button onclick="document.getElementById('mobilePortalMenu').classList.toggle('hidden')" class="p-1.5 text-primary rounded hover:bg-surface-container-low">
+<span class="material-symbols-outlined text-xl">menu</span>
+</button>
+</div>
+</div>
+<!-- Mobile Navigation Drawer -->
+<div id="mobilePortalMenu" class="hidden pt-3 pb-1 border-t border-outline-variant mt-2 flex flex-col gap-1 text-sm">
+<a class="flex items-center gap-2 px-3 py-2 text-primary font-semibold rounded-lg bg-primary-container/20" href="code.html"><span class="material-symbols-outlined text-lg">dashboard</span> Overview</a>
+<a class="flex items-center gap-2 px-3 py-2 text-on-surface-variant rounded-lg hover:bg-surface-container-high" href="../ai_treatment_performance_report/code.html"><span class="material-symbols-outlined text-lg">biotech</span> Treatment Logs</a>
+<a class="flex items-center gap-2 px-3 py-2 text-on-surface-variant rounded-lg hover:bg-surface-container-high" href="../real_time_monitoring_dashboard/code.html"><span class="material-symbols-outlined text-lg">monitoring</span> Analytics</a>
+<a class="flex items-center gap-2 px-3 py-2 text-on-surface-variant rounded-lg hover:bg-surface-container-high" href="../microorganism_database/code.html"><span class="material-symbols-outlined text-lg">database</span> Microbe DB</a>
+<a class="flex items-center gap-2 px-3 py-2 text-on-surface-variant rounded-lg hover:bg-surface-container-high" href="../request_treatment_form/code.html"><span class="material-symbols-outlined text-lg">add_circle</span> Request Treatment</a>
+<a class="flex items-center gap-2 px-3 py-2 text-on-surface-variant rounded-lg hover:bg-surface-container-high" href="../bioflow_ai_homepage/code.html"><span class="material-symbols-outlined text-lg">arrow_back</span> Back to Home</a>
+</div>
 </header>
 <div class="p-margin-mobile md:p-margin-desktop flex-1">
 <div class="mb-4 flex items-center justify-between">
@@ -436,7 +452,7 @@
 <footer class="w-full mt-xl border-t border-outline-variant bg-surface-bright grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop py-lg">
 <div class="col-span-1 md:col-span-2">
 <div class="font-label-caps text-label-caps text-primary mb-sm">REMYVIA industrial ecotech</div>
-<p class="font-body-sm text-body-sm text-secondary">© 2024 REMYVIA industrial ecotech. Biotechnology | AI Analytics | Smart Monitoring</p>
+<p class="font-body-sm text-body-sm text-secondary">© 2026 REMYVIA industrial ecotech. Biotechnology | AI Analytics | Smart Monitoring</p>
 </div>
 <div class="col-span-1 flex flex-col gap-xs">
 <a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Site Map</a>

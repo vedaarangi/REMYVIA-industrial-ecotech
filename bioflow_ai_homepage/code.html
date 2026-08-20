@@ -202,9 +202,10 @@
 </head>
 <body class="antialiased min-h-screen flex flex-col font-body-md text-body-md">
 <!-- TopNavBar -->
-<nav class="bg-white/80 dark:bg-inverse-surface/80 backdrop-blur-md docked full-width top-0 sticky z-50 border-b border-outline-variant dark:border-outline shadow-sm flex items-center justify-between px-margin-desktop py-4 max-w-full">
+<nav class="bg-white/80 dark:bg-inverse-surface/80 backdrop-blur-md docked full-width top-0 sticky z-50 border-b border-outline-variant dark:border-outline shadow-sm px-margin-mobile md:px-margin-desktop py-4 max-w-full">
+<div class="flex items-center justify-between">
 <div class="flex items-center gap-4">
-<a href="code.html" class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed hover:opacity-90">REMYVIA industrial ecotech</a>
+<a href="code.html" class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed hover:opacity-90 text-lg md:text-xl">REMYVIA industrial ecotech</a>
 </div>
 <div class="hidden md:flex gap-gutter items-center">
 <a class="text-primary dark:text-primary-fixed font-semibold border-b-2 border-primary pb-1 font-body-md text-body-md active:scale-95 transition-transform hover:bg-surface-container-low transition-colors duration-200 px-2" href="code.html">Home</a>
@@ -213,9 +214,23 @@
 <a class="text-secondary dark:text-secondary-fixed-dim hover:text-primary font-body-md text-body-md active:scale-95 transition-transform hover:bg-surface-container-low transition-colors duration-200 px-2 rounded-lg" href="../microorganism_database/code.html">Microbe DB</a>
 <a class="text-secondary dark:text-secondary-fixed-dim hover:text-primary font-body-md text-body-md active:scale-95 transition-transform hover:bg-surface-container-low transition-colors duration-200 px-2 rounded-lg" href="../ai_treatment_performance_report/code.html">Performance Report</a>
 </div>
-<a href="../request_treatment_form/code.html" class="bg-primary text-on-primary font-body-md text-body-md font-semibold px-4 py-2 rounded-lg hover:bg-primary-container transition-colors active:scale-95 inline-block">
+<div class="flex items-center gap-2">
+<a href="../request_treatment_form/code.html" class="bg-primary text-on-primary font-body-md text-body-md font-semibold px-3 md:px-4 py-2 rounded-lg hover:bg-primary-container transition-colors active:scale-95 text-xs md:text-sm inline-block">
             Request Treatment
 </a>
+<button onclick="document.getElementById('mobileHomeMenu').classList.toggle('hidden')" class="md:hidden text-primary p-2 rounded-lg hover:bg-surface-container-low focus:outline-none">
+<span class="material-symbols-outlined text-2xl">menu</span>
+</button>
+</div>
+</div>
+<!-- Mobile Navigation Drawer -->
+<div id="mobileHomeMenu" class="hidden md:hidden pt-4 pb-2 border-t border-outline-variant mt-3 flex flex-col gap-2">
+<a class="text-primary font-semibold px-3 py-2 rounded-lg bg-surface-container-low" href="code.html">Home</a>
+<a class="text-secondary hover:text-primary px-3 py-2 rounded-lg hover:bg-surface-container-low" href="../industry_portal_dashboard/code.html">Portal Dashboard</a>
+<a class="text-secondary hover:text-primary px-3 py-2 rounded-lg hover:bg-surface-container-low" href="../real_time_monitoring_dashboard/code.html">Real-Time Monitoring</a>
+<a class="text-secondary hover:text-primary px-3 py-2 rounded-lg hover:bg-surface-container-low" href="../microorganism_database/code.html">Microbe DB</a>
+<a class="text-secondary hover:text-primary px-3 py-2 rounded-lg hover:bg-surface-container-low" href="../ai_treatment_performance_report/code.html">Performance Report</a>
+</div>
 </nav>
 <!-- Main Content -->
 <main class="flex-grow">
@@ -230,7 +245,7 @@
                         Turning Industrial Wastewater Into a Smarter, Sustainable Future.
                     </h1>
 <p class="font-body-lg text-body-lg text-on-surface-variant mb-8 max-w-2xl">
-                        AI-assisted microbial bioconcrete treatment designed to analyze, monitor and improve industrial wastewater remediation. A fusion of biological sciences and advanced computation for precise environmental stewardship.
+                        AI-assisted MICROBIAL APPLICATIONS treatment designed to analyze, monitor and improve industrial wastewater remediation. A fusion of biological sciences and advanced computation for precise environmental stewardship.
                     </p>
 <div class="flex flex-col sm:flex-row gap-4">
 <a href="../request_treatment_form/code.html" class="bg-primary text-on-primary font-body-md text-body-md font-semibold px-6 py-3 rounded-lg hover:bg-primary-container transition-colors shadow-sm flex items-center justify-center gap-2">
@@ -282,7 +297,7 @@
 <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4 border border-primary/20 text-primary">
 <span class="material-symbols-outlined text-[24px]">view_in_ar</span>
 </div>
-<h3 class="font-body-md text-body-md font-semibold text-on-surface mb-1 group-hover:text-primary transition-colors">Microbial Bioconcrete</h3>
+<h3 class="font-body-md text-body-md font-semibold text-on-surface mb-1 group-hover:text-primary transition-colors">MICROBIAL APPLICATIONS</h3>
 <p class="font-body-sm text-body-sm text-on-surface-variant">Application of engineered strains to neutralize specific toxins.</p>
 </a>
 <!-- Step 3 -->
@@ -319,7 +334,7 @@
 <div class="md:col-span-4 sticky top-32 self-start">
 <h2 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-on-surface mb-4">How It Works</h2>
 <p class="font-body-lg text-body-lg text-on-surface-variant mb-6">
-                            Our proprietary 6-step framework ensures maximum efficiency in deploying biological solutions to complex industrial challenges.
+                            Our proprietary 7-step framework ensures maximum efficiency in deploying biological solutions to complex industrial challenges.
                         </p>
 <div class="w-full h-64 rounded-xl overflow-hidden border border-outline-variant bg-surface-container-lowest flex items-center justify-center relative">
 <!-- Animation Placeholder -->
@@ -329,7 +344,7 @@
 </div>
 <div class="md:col-span-8">
 <div class="grid grid-cols-1 sm:grid-cols-2 gap-gutter">
-<!-- Step Card -->
+<!-- Step Card 01 -->
 <a href="../request_treatment_form/code.html" class="bg-surface-container-lowest p-md border border-outline-variant rounded-xl hover:border-primary transition-all card-elevation group block">
 <div class="flex items-center justify-between mb-4 border-b border-outline-variant pb-2">
 <span class="font-label-caps text-label-caps text-primary bg-primary/10 px-2 py-1 rounded">STEP 01</span>
@@ -338,7 +353,7 @@
 <h3 class="font-body-md text-body-md font-semibold text-on-surface mb-2 group-hover:text-primary transition-colors">Submit</h3>
 <p class="font-body-sm text-body-sm text-on-surface-variant">Provide comprehensive effluent data profiles via our secure client portal for initial assessment.</p>
 </a>
-<!-- Step Card -->
+<!-- Step Card 02 -->
 <a href="../industry_portal_dashboard/code.html" class="bg-surface-container-lowest p-md border border-outline-variant rounded-xl hover:border-primary transition-all card-elevation group block">
 <div class="flex items-center justify-between mb-4 border-b border-outline-variant pb-2">
 <span class="font-label-caps text-label-caps text-primary bg-primary/10 px-2 py-1 rounded">STEP 02</span>
@@ -347,37 +362,46 @@
 <h3 class="font-body-md text-body-md font-semibold text-on-surface mb-2 group-hover:text-primary transition-colors">Analyze</h3>
 <p class="font-body-sm text-body-sm text-on-surface-variant">Our AI cross-references your data against thousands of microbial interaction scenarios.</p>
 </a>
-<!-- Step Card -->
+<!-- Step Card 03 -->
 <a href="../microorganism_database/code.html" class="bg-surface-container-lowest p-md border border-outline-variant rounded-xl hover:border-primary transition-all card-elevation group block">
 <div class="flex items-center justify-between mb-4 border-b border-outline-variant pb-2">
 <span class="font-label-caps text-label-caps text-primary bg-primary/10 px-2 py-1 rounded">STEP 03</span>
-<span class="material-symbols-outlined text-secondary group-hover:text-primary transition-colors">join_inner</span>
+<span class="material-symbols-outlined text-secondary group-hover:text-primary transition-colors">sensors</span>
 </div>
-<h3 class="font-body-md text-body-md font-semibold text-on-surface mb-2 group-hover:text-primary transition-colors">Match</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant">Identification of the optimal bioconcrete formulation and microbial strains for your specific contaminants.</p>
+<h3 class="font-body-md text-body-md font-semibold text-on-surface mb-2 group-hover:text-primary transition-colors uppercase leading-snug break-words">IDENTIFICATION OF COMPOUNDS RELATED TO TOXIC CHEMICALS INCLUDING HEAVY METALS USING BIOSENSORS</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Biosensors identify toxic chemical compounds and heavy metals present in the wastewater for targeted analysis.</p>
 </a>
-<!-- Step Card -->
-<a href="../industry_portal_dashboard/code.html" class="bg-surface-container-lowest p-md border border-outline-variant rounded-xl hover:border-primary transition-all card-elevation group block">
-<div class="flex items-center justify-between mb-4 border-b border-outline-variant pb-2">
-<span class="font-label-caps text-label-caps text-primary bg-primary/10 px-2 py-1 rounded">STEP 04</span>
-<span class="material-symbols-outlined text-secondary group-hover:text-primary transition-colors">settings_applications</span>
-</div>
-<h3 class="font-body-md text-body-md font-semibold text-on-surface mb-2 group-hover:text-primary transition-colors">Treat</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant">Deployment and integration of the tailored bioconcrete matrices into your existing infrastructure.</p>
-</a>
-<!-- Step Card -->
+<!-- Step Card 04 -->
 <a href="../real_time_monitoring_dashboard/code.html" class="bg-surface-container-lowest p-md border border-outline-variant rounded-xl hover:border-primary transition-all card-elevation group block">
 <div class="flex items-center justify-between mb-4 border-b border-outline-variant pb-2">
-<span class="font-label-caps text-label-caps text-primary bg-primary/10 px-2 py-1 rounded">STEP 05</span>
-<span class="material-symbols-outlined text-secondary group-hover:text-primary transition-colors">monitoring</span>
+<span class="font-label-caps text-label-caps text-primary bg-primary/10 px-2 py-1 rounded">STEP 04</span>
+<span class="material-symbols-outlined text-secondary group-hover:text-primary transition-colors">developer_board</span>
 </div>
-<h3 class="font-body-md text-body-md font-semibold text-on-surface mb-2 group-hover:text-primary transition-colors">Monitor</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant">Continuous telemetry from embedded biosensors streams live data to your unified dashboard.</p>
+<h3 class="font-body-md text-body-md font-semibold text-on-surface mb-2 group-hover:text-primary transition-colors uppercase leading-snug break-words">TRANFER OF INFORMATION FROM BIOSENSORS TO DATA PROCESSING UNIT (COMPUTER)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Information detected by biosensors is transferred to the computer and data-processing unit for further analysis.</p>
 </a>
-<!-- Step Card -->
-<a href="../ai_treatment_performance_report/code.html" class="bg-surface-container-lowest p-md border border-outline-variant rounded-xl hover:border-primary transition-all card-elevation group block">
+<!-- Step Card 05 -->
+<a href="../industry_portal_dashboard/code.html" class="bg-surface-container-lowest p-md border border-outline-variant rounded-xl hover:border-primary transition-all card-elevation group block">
+<div class="flex items-center justify-between mb-4 border-b border-outline-variant pb-2">
+<span class="font-label-caps text-label-caps text-primary bg-primary/10 px-2 py-1 rounded">STEP 05</span>
+<span class="material-symbols-outlined text-secondary group-hover:text-primary transition-colors">query_stats</span>
+</div>
+<h3 class="font-body-md text-body-md font-semibold text-on-surface mb-2 group-hover:text-primary transition-colors uppercase leading-snug break-words">PROCESSING INFORMATION TO AI AND EVALUATION OF PERCENTAGES</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Collected information is processed using advanced AI models and relevant treatment percentages are evaluated.</p>
+</a>
+<!-- Step Card 06 -->
+<a href="../real_time_monitoring_dashboard/code.html" class="bg-surface-container-lowest p-md border border-outline-variant rounded-xl hover:border-primary transition-all card-elevation group block">
 <div class="flex items-center justify-between mb-4 border-b border-outline-variant pb-2">
 <span class="font-label-caps text-label-caps text-primary bg-primary/10 px-2 py-1 rounded">STEP 06</span>
+<span class="material-symbols-outlined text-secondary group-hover:text-primary transition-colors">balance</span>
+</div>
+<h3 class="font-body-md text-body-md font-semibold text-on-surface mb-2 group-hover:text-primary transition-colors uppercase leading-snug break-words">COMPARING INITIAL AND FINAL PERCENTAGE TO KNOW THE PERCENTAGE OF BIOREMEDIATION</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Initial and final contaminant percentages are compared to determine the exact percentage of bioremediation achieved.</p>
+</a>
+<!-- Step Card 07 -->
+<a href="../ai_treatment_performance_report/code.html" class="bg-surface-container-lowest p-md border border-outline-variant rounded-xl hover:border-primary transition-all card-elevation group block sm:col-span-2 lg:col-span-1">
+<div class="flex items-center justify-between mb-4 border-b border-outline-variant pb-2">
+<span class="font-label-caps text-label-caps text-primary bg-primary/10 px-2 py-1 rounded">STEP 07</span>
 <span class="material-symbols-outlined text-secondary group-hover:text-primary transition-colors">compare_arrows</span>
 </div>
 <h3 class="font-body-md text-body-md font-semibold text-on-surface mb-2 group-hover:text-primary transition-colors">Compare</h3>
@@ -404,7 +428,7 @@
 </div>
 </div>
 <div class="col-span-1 md:col-span-2">
-<p class="">© 2024 REMYVIA industrial ecotech. Biotechnology | AI Analytics | Smart Monitoring</p>
+<p class="">© 2026 REMYVIA industrial ecotech. Biotechnology | AI Analytics | Smart Monitoring</p>
 </div>
 <div class="col-span-1 md:col-span-2 flex flex-wrap gap-x-6 gap-y-2 justify-start md:justify-end">
 <a class="text-on-surface-variant hover:text-primary transition-colors" href="code.html">Home</a>

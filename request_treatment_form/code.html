@@ -184,8 +184,9 @@
 </head>
 <body class="bg-background text-on-background font-body-md min-h-screen">
 <!-- Top Navigation Bar -->
-<nav class="bg-white/80 dark:bg-inverse-surface/80 backdrop-blur-md sticky top-0 z-50 border-b border-outline-variant shadow-sm flex items-center justify-between px-margin-desktop py-4 max-w-full">
-<a href="../bioflow_ai_homepage/code.html" class="font-headline-md text-headline-md font-bold text-primary hover:opacity-90">REMYVIA industrial ecotech</a>
+<nav class="bg-white/80 dark:bg-inverse-surface/80 backdrop-blur-md sticky top-0 z-50 border-b border-outline-variant shadow-sm px-margin-mobile md:px-margin-desktop py-4 max-w-full">
+<div class="flex items-center justify-between">
+<a href="../bioflow_ai_homepage/code.html" class="font-headline-md text-headline-md font-bold text-primary hover:opacity-90 text-base md:text-xl">REMYVIA industrial ecotech</a>
 <div class="hidden md:flex gap-gutter items-center">
 <a class="text-secondary hover:text-primary font-body-md text-body-md transition-colors px-2" href="../bioflow_ai_homepage/code.html">Home</a>
 <a class="text-secondary hover:text-primary font-body-md text-body-md transition-colors px-2" href="../industry_portal_dashboard/code.html">Portal Overview</a>
@@ -193,9 +194,23 @@
 <a class="text-secondary hover:text-primary font-body-md text-body-md transition-colors px-2" href="../microorganism_database/code.html">Microbe DB</a>
 <a class="text-secondary hover:text-primary font-body-md text-body-md transition-colors px-2" href="../ai_treatment_performance_report/code.html">Performance Report</a>
 </div>
-<a href="../bioflow_ai_homepage/code.html" class="text-secondary hover:text-primary font-body-sm flex items-center gap-1">
+<div class="flex items-center gap-2">
+<a href="../bioflow_ai_homepage/code.html" class="text-secondary hover:text-primary font-body-sm flex items-center gap-1 text-xs md:text-sm">
 <span class="material-symbols-outlined text-[18px]">close</span> Cancel
 </a>
+<button onclick="document.getElementById('mobileFormMenu').classList.toggle('hidden')" class="md:hidden text-primary p-1.5 rounded-lg hover:bg-surface-container-low focus:outline-none">
+<span class="material-symbols-outlined text-2xl">menu</span>
+</button>
+</div>
+</div>
+<!-- Mobile Navigation Drawer -->
+<div id="mobileFormMenu" class="hidden md:hidden pt-3 pb-1 border-t border-outline-variant mt-2 flex flex-col gap-1 text-sm">
+<a class="text-secondary hover:text-primary px-3 py-2 rounded-lg hover:bg-surface-container-low" href="../bioflow_ai_homepage/code.html">Home</a>
+<a class="text-secondary hover:text-primary px-3 py-2 rounded-lg hover:bg-surface-container-low" href="../industry_portal_dashboard/code.html">Portal Overview</a>
+<a class="text-secondary hover:text-primary px-3 py-2 rounded-lg hover:bg-surface-container-low" href="../real_time_monitoring_dashboard/code.html">Monitoring</a>
+<a class="text-secondary hover:text-primary px-3 py-2 rounded-lg hover:bg-surface-container-low" href="../microorganism_database/code.html">Microbe DB</a>
+<a class="text-secondary hover:text-primary px-3 py-2 rounded-lg hover:bg-surface-container-low" href="../ai_treatment_performance_report/code.html">Performance Report</a>
+</div>
 </nav>
 
 <main class="w-full max-w-4xl mx-auto px-margin-mobile md:px-margin-desktop py-xl">

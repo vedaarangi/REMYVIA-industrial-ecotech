@@ -166,6 +166,29 @@
 </nav>
 <!-- Main Content Canvas -->
 <main class="flex-1 w-full md:ml-64 p-margin-mobile md:p-margin-desktop overflow-y-auto">
+<!-- Mobile Top Nav (visible only on mobile) -->
+<header class="flex md:hidden flex-col border-b border-outline-variant bg-white/80 backdrop-blur-md sticky top-0 z-30 px-margin-mobile py-3 -mx-margin-mobile -mt-margin-mobile mb-6">
+<div class="flex items-center justify-between">
+<a href="../bioflow_ai_homepage/code.html" class="font-headline-md text-headline-md font-bold text-primary text-base">REMYVIA Ecotech</a>
+<div class="flex items-center gap-2">
+<a href="../bioflow_ai_homepage/code.html" class="p-1.5 text-primary rounded hover:bg-surface-container-low" title="Home">
+<span class="material-symbols-outlined text-xl">home</span>
+</a>
+<button onclick="document.getElementById('mobileReportMenu').classList.toggle('hidden')" class="p-1.5 text-primary rounded hover:bg-surface-container-low">
+<span class="material-symbols-outlined text-xl">menu</span>
+</button>
+</div>
+</div>
+<!-- Mobile Navigation Drawer -->
+<div id="mobileReportMenu" class="hidden pt-3 pb-1 border-t border-outline-variant mt-2 flex flex-col gap-1 text-sm">
+<a class="flex items-center gap-2 px-3 py-2 text-on-surface-variant rounded-lg hover:bg-surface-container-high" href="../bioflow_ai_homepage/code.html"><span class="material-symbols-outlined text-lg">home</span> Home Landing</a>
+<a class="flex items-center gap-2 px-3 py-2 text-on-surface-variant rounded-lg hover:bg-surface-container-high" href="../industry_portal_dashboard/code.html"><span class="material-symbols-outlined text-lg">dashboard</span> Overview</a>
+<a class="flex items-center gap-2 px-3 py-2 text-primary font-semibold rounded-lg bg-primary-container/20" href="code.html"><span class="material-symbols-outlined text-lg">biotech</span> Treatment Logs</a>
+<a class="flex items-center gap-2 px-3 py-2 text-on-surface-variant rounded-lg hover:bg-surface-container-high" href="../real_time_monitoring_dashboard/code.html"><span class="material-symbols-outlined text-lg">monitoring</span> Analytics</a>
+<a class="flex items-center gap-2 px-3 py-2 text-on-surface-variant rounded-lg hover:bg-surface-container-high" href="../microorganism_database/code.html"><span class="material-symbols-outlined text-lg">database</span> Microbe DB</a>
+<a class="flex items-center gap-2 px-3 py-2 text-on-surface-variant rounded-lg hover:bg-surface-container-high" href="../request_treatment_form/code.html"><span class="material-symbols-outlined text-lg">add_circle</span> Request Treatment</a>
+</div>
+</header>
 <!-- Top Action Bar -->
 <header class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-xl">
 <div class="flex flex-col gap-2">
@@ -184,7 +207,7 @@
                     AI-Assisted Performance Report
                 </h1>
 <p class="font-label-caps text-label-caps text-secondary uppercase tracking-wider">
-                    Generated: Oct 24, 2024 • Ref: REP-8821-A
+                    Generated: Oct 24, 2026 • Ref: REP-8821-A
                 </p>
 </div>
 <div class="flex gap-2">
